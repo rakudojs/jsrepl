@@ -395,3 +395,18 @@
   includes: []
   engine: 'langs/roy/jsrepl_roy.coffee'
   minifier: 'closure'
+
+@JSREPL::Languages::NQP =
+  system_name: 'nqp'
+  name: 'NQP'
+  extension: 'nqp'
+  matchings: [
+    ['(', ')']
+    ['[', ']']
+    ['{', '}']
+  ]
+  scripts: [ ]
+  includes: [
+  ]
+  engine: 'langs/nqp/jsrepl_nqp.coffee'
+  minifier: 'none'
